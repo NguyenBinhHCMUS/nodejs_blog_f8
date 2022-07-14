@@ -25,3 +25,9 @@ script: {
 "start": "nodemon --inspect index.js",
 }
 ==> start: npm start
+
+# Install Morgan
+
+Quan sát các log từ client lên server.
+npm i morgan
+var morgan = require('morgan)
