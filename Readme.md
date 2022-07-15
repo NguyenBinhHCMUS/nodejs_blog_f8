@@ -31,3 +31,13 @@ script: {
 Quan sát các log từ client lên server.
 npm i morgan
 var morgan = require('morgan)
+
+# Template engine (handlebars)
+
+npm i express-handlebars
+
+# Install node-sass
+
+npm i node-sass --save-dev
+Cập nhật đường dẫn package.json/script: "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css"
+npm run watch: compile app.scss => app.css
