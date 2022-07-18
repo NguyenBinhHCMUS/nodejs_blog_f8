@@ -41,3 +41,10 @@ npm i express-handlebars
 npm i node-sass --save-dev
 Cập nhật đường dẫn package.json/script: "watch": "node-sass --watch src/resources/scss/app.scss src/public/css/app.css"
 npm run watch: compile app.scss => app.css
+
+# Form default html bahavior
+
+- Phương thức mặc định: method="GET"
+- Hàm submit lấy giá trị value dựa vào name trong thẻ input và truyền lên query parameters
+- Khi đổi method form sang POST thì f5 lại trang sẽ là phương thức post, khi vào lần đầu tiên nó là GET.
+- Attribute action="", cho chúng ta biết chúng ta submit ở đâu. Mặc định sẽ lấy url hiện tại.
