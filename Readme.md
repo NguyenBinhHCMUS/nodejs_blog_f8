@@ -48,3 +48,9 @@ npm run watch: compile app.scss => app.css
 - Hàm submit lấy giá trị value dựa vào name trong thẻ input và truyền lên query parameters
 - Khi đổi method form sang POST thì f5 lại trang sẽ là phương thức post, khi vào lần đầu tiên nó là GET.
 - Attribute action="", cho chúng ta biết chúng ta submit ở đâu. Mặc định sẽ lấy url hiện tại.
+
+# Mô hình MVC]
+
+M: model tương tác với resource để lấy dữ liệu.
+V: view chứ các file html, css
+C: control trung chuyển giữa view và model 
