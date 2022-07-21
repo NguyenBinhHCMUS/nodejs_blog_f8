@@ -101,3 +101,20 @@ package.json
     }
 }
 ```
+
+# [MVC] Model
+
+- Install mongoose (https://github.com/Automattic/mongoose): npm i mongoose, const mongoose = require('mongoose');
+- Connect to DB
+  -Create model
+
+Mongodb: cơ sở dũ liệu không quan hệ, document db.
+
+Mongoose: object model driver lả trình điều khiển đứng giữa nodejs và mongodb để giúp nodejs làm việc dễ dàng với mongodb.
+
+# Install Json viewer extension
+
+1. Json viewer
+2. Route methods
+3. App listen log
+4. Resource path
