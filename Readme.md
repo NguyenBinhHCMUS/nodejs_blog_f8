@@ -53,4 +53,51 @@ npm run watch: compile app.scss => app.css
 
 M: model tương tác với resource để lấy dữ liệu.
 V: view chứ các file html, css
-C: control trung chuyển giữa view và model 
+C: control trung chuyển giữa view và model
+
+# Prettier
+
+npm i husky prettier lint-staged --save-dev
+
+prettier: format code
+lint-staged: format code khi thao tác vói git
+husky: tự động chạy prettier và lint-staged
+
+.prettierrc
+{
+"bracketSpacing": true,
+"printWidth": 100,
+"singleQuote": true,
+"trailingComma": "all",
+"tabWidth": 2,
+"useTabs": false,
+"semi": true
+}
+
+"scripts": {
+...
+"format": "prettier --write src",
+},
+
+.huskyrc
+
+{
+"hooks": {
+"pre-commit": "lint-staged"
+}
+}
+
+package.json
+
+```js
+"scripts": {
+    ...
+    "precommit": "yarn run lint && yarn test",
+    "prepush": "yarn run lint",
+},
+"husky": {
+    "hooks": {
+        "pre-commit": "lint-staged"
+    }
+}
+```
