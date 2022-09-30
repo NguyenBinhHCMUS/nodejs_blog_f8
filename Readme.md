@@ -117,4 +117,6 @@ Mongoose: object model driver lả trình điều khiển đứng giữa nodejs 
 1. Json viewer
 2. Route methods
 3. App listen log
-4. Resource path
+
+# 29. Create new course
+
